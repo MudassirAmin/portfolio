@@ -105,7 +105,7 @@ for (let i = 0; i < particleCount; i++) {
   const angle = Math.random() * Math.PI * 2;
 
   // Speed is inversely proportional to radius (Kepler-like motion)
-  const speed = 0.4 / radius; 
+  const speed = 0.2 / radius; 
 
   particlesData.push({ radius, angle, speed });
 
