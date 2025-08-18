@@ -108,7 +108,7 @@ const positions = new Float32Array(particleCount * 3);
 const colors = new Float32Array(particleCount * 3);
 
 // Set the inner and outer radius of the ring
-const innerRadius = 3;
+const innerRadius = 2;
 const outerRadius = 5;
 
 // Create three new colors for the particles
@@ -204,7 +204,7 @@ controls.enableDamping = true;
 controls.dampingFactor = 0.05;
 // Set the minimum and maximum distance you can zoom in and out
 controls.minDistance = 5;
-controls.maxDistance = 100;
+controls.maxDistance = 70;
 // Set the maximum polar angle (how far you can rotate up and down)
 controls.maxPolarAngle = Math.PI / 2 - 0.05;
 
@@ -239,7 +239,7 @@ function animate() {
   particleRing.geometry.attributes.position.needsUpdate = true;
 
   // Slowly rotate the starfield for a parallax effect
-  starfield.rotation.y += 0.0009;
+  starfield.rotation.y += 0.0003;
 
   // Render the scene with the camera
   renderer.render(scene, camera);
