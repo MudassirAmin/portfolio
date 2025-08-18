@@ -108,7 +108,7 @@ const positions = new Float32Array(particleCount * 3);
 const colors = new Float32Array(particleCount * 3);
 
 // Set the inner and outer radius of the ring
-const innerRadius = 2;
+const innerRadius = 4;
 const outerRadius = 5;
 
 // Create three new colors for the particles
@@ -239,7 +239,7 @@ function animate() {
   particleRing.geometry.attributes.position.needsUpdate = true;
 
   // Slowly rotate the starfield for a parallax effect
-  starfield.rotation.y += 0.0003;
+  starfield.rotation.y += 0.0001;
 
   // Render the scene with the camera
   renderer.render(scene, camera);
